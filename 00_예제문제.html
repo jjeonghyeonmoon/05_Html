@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>식단표 테이블 만들기</h1>
+    <table border="1">
+        <caption>머행블로그 식단표</caption>
+        <tr>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+            <th>일</th>
+        </tr>
+        <tr>
+            <td colspan="2">쌀밥</td>
+            <td colspan="3">잡곡밥</td> 
+            <td>스파게티</td>
+            <td>짜장면</td>
+        </tr>
+        <tr>
+            <td>불고기</td>
+            <td>떡갈비</td>
+            <td>미니돈가스</td>
+            <td>오징어볶음</td>
+            <td>제육볶음</td>
+            <td rowspan="2">피클</td>
+            <td>단무지</td>
+        </tr>
+        <tr>
+            <td>배부김치</td>
+            <td>깍두기</td>
+            <td>미소된장국</td>
+            <td>동치미</td>
+            <td>고추절임</td>
+            <td>짬뽕국물</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>표만들기</h2>
+    <h3>셀 합치기</h3>
+    <table border="1">
+        <tr>
+            <td colspan="3">공연요금</td>      
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>s석</td>
+            <td>VIP</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>30,000</td>
+            <td>50,000</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>40,000</td>
+            <td>60,000</td>
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 50%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td>13:00시 ~ 15:00시</td>
+        </tr>
+        <tr>
+            <td>2회</td>
+            <td>17:00시 ~ 19:00시</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <td width="60">가</td>
+            <td>나</td>
+            <td>다</td>
+            <td rowspan="4">라</td>
+        </tr>
+        <tr>
+            <td>마</td>
+            <td colspan="2" rowspan="3">바</td>
+        </tr>
+        <tr>
+            <td>사</td>
+        </tr>
+        <tr>
+            <td>아</td>
+        </tr>
+        <tr>
+            <td colspan="2" width="120">자</td>
+            <td colspan="2" width="120">차</td>
+        </tr>
+        <tr>
+            <td colspan="4">카</td>
+        </tr>
+    </table>
+<table>
+    <fieldset>
+        <legend>납품자 정보</legend>
+        <label>1. 납품자명 : </label><input type="text"><br>  
+        <label for="email">2. email : </label>
+    <input type="text" id="email" name="email"
+            size="60" placeholder="answer@naver.com"><br>
+        <label>3. 홈페이지 : </label><input type="text" value="http://"><br>
+        <label>4. 지역 : </label>
+        <select>
+            <option>서울</option>
+            <option>부산</option>
+            <option>대구</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>납품 정보</legend>
+        <ul>
+        <li>상품명 : <input type="text"></li>
+        <li><label for="남품수량">남품수량 : </label>
+    <input type="text" id="남품수량" name="남품수량"
+            size="60" placeholder="최소100"></li>
+        <li>남품등급 : <input type="range"></li>
+        <li>기타사항 : <textarea rows="5" cols="50"></textarea></li>
+    </ul>
+    </fieldset>
+    <br>
+    <input type="submit" value="send message">
+</table>
+</body>
+</html>
