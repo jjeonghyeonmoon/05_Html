@@ -152,9 +152,9 @@
     </select>
     <fieldset>
         <legend>피자 사이즈</legend><br>
-        <label>Small</label><input type="radio"><br><br>
-        <label>Medium</label><input type="radio"><br><br>
-        <label>Large</label><input type="radio"><br><br>
+        <label>Small</label><input type="radio" name="pizza"><br><br>
+        <label>Medium</label><input type="radio" name="pizza"><br><br>
+        <label>Large</label><input type="radio" name="pizza"><br><br>
     </fieldset>
     <fieldset>
         <legend>토핑선택</legend><br>
@@ -172,14 +172,34 @@
     <h1>회원가입</h1>
     <br><br>
     <fieldset>
-        <text-align>
-        <legend>필수 입력 사항</legend></text-align>
-        <strong><label>ID</label></strong><br>
-        <strong><label>비밀번호</label></strong><br>
-        <strong><label>비밀번호 확인</label></strong><br>
-        <strong><label>Email</label></strong><br>
-    
+        <legend>필수 입력 사항</legend>
+        <strong><label>ID : </label></strong><input type="text" placeholder="아이디 10글자 이내">
+        <button type="button">중복 체크</button><br>
+        <strong><label>비밀번호 : </label><input type="text" placeholder="영문,숫자,특수문자 포함 8자 이상"></strong><br>
+        <strong><label>비밀번호 확인 : </label></strong><br>
+        <strong><label>Email : </label></strong>
+        <select>
+            <option>직접입력</option>
+            <option>@naver.com</option>
+            <option>@google.com</option>
+            <option>@himedia.com</option>
+        </select><br>
     </fieldset>
+    <fieldset>
+        <legend>추가 정보</legend>
+        <label>프로필사진 </label><input type="file"><br><br>
+        <label>성별 : </label>
+    <input id="male" type="radio" name="gender" value="남성">
+    <label for="male">남성</label>
+    <input id="female" type="radio" name="gender" value="여성">
+    <label for="female">여성</label>
+    <br><br>
+    <label>생년월일 : <input type="date"></label>
+    <br><br>
+    <label>취미</label>
+    <br>
+    </fieldset>
+    
 </table>
 </body>
 </html>
